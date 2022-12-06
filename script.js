@@ -1,2 +1,11 @@
-import { initializeApp } from "firebase/app";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
 
+const firebaseApp = initializeApp({
+    apiKey: "AIzaSyAgtTRkf1smT1GQ4g-CfZ43TSTZV15MAic",
+  authDomain: "educationwebsite-baaf8.firebaseapp.com",
+  projectId: "educationwebsite-baaf8",
+  storageBucket: "educationwebsite-baaf8.appspot.com",
+  messagingSenderId: "294364177449",
+  appId: "1:294364177449:web:c49f7ca554f59d9cf62838",
+  measurementId: "G-T7GVZ0XP5G"
+});

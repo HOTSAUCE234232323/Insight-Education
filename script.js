@@ -15,10 +15,9 @@ document.getElementById("SignUp").onclick = function(){
     const auth = getAuth();
     var email = document.getElementById("Email").value;
     var password = document.getElementById("Password").value;
-    var username = document.getElementById("Username").value;
+    var username = document.getElementById("username").value;
     const db = getDatabase();
-    var username = ref
-    set(ref(db, 'chats/'), {
+    set(ref(db, 'usernames/'), {
       username: username
     });
     createUserWithEmailAndPassword(auth, email, password)

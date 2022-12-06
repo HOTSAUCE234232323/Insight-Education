@@ -15,6 +15,7 @@ ref.on('value', function(snapshot){
     snapshot.array.forEach(function(childSnapshot) {
         var data = childSnapshot.val();
         document.getElementById("chats").innerHTML = data.chat;
+        document.getElementById("chats").innerHTML = data.username;
     });
 })
 document.getElementById("chattextsubmit").onclick = function(){

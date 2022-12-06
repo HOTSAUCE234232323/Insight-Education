@@ -1,6 +1,5 @@
-import { create } from "domain";
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js';
+import { getAuth, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js';
 
 const firebaseApp = initializeApp({
     apiKey: "AIzaSyAgtTRkf1smT1GQ4g-CfZ43TSTZV15MAic",
@@ -18,6 +17,7 @@ document.getElementById("SignUp").onclick = function(){
     createUserWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
         const user = userCredential.user;
+        location.assign("index.html")
     })
     .catch((error) => {
         const errorCode = error.code;
